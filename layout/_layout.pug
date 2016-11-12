@@ -24,7 +24,8 @@ html(lang="zh-cn")
         ul.social
           each social in theme.social
             li
-              a(href=social.link, target="_blank") #{social.name}
+              a(href=social.link, title=social.name, target="_blank")
+                i(class='icon icon-' + social.icon)
       .bottom
         p.copyright POWER BY CCWEBSITE.COM
 
