@@ -1,5 +1,6 @@
-extends ./_layout
+extends ./_layout.pug
 block content
+  include ./_partial/page_header.pug
   ul.post-list
     each post in page.posts.data
       li 
@@ -9,9 +10,12 @@ block content
         .excerpt !{post.excerpt}
         ul.meta
           li
-            i.icon.icon-author 
+            i.icon.icon-author
             | #{config.author}
           li
-            i.icon.icon-clock 
-            | #{parseInt(post.content.length/900)} Minutes
+            i.icon.icon-clock
+            | #{parseInt(post.content ? post.content.length/900 : 0)} Minutes
+          li
+            i.icon.icon-category
+            | !{list_categories(post.categories)}
   include ./_partial/pagination.pug

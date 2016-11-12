@@ -22,9 +22,7 @@
     }
     &.link {
       a {
-        &:hover {
-          color: $color-belizeHole;
-        }
+        @include link-hover;
       }
     }
   }

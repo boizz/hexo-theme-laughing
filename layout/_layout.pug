@@ -8,25 +8,6 @@ html(lang="zh-cn")
     title #{page.title || config.title}
     link(rel="stylesheet", href="/css/main_style.min.css")
   body
-    .page-header
-      .background
-        img(src=theme.background)
-      .author
-        .head
-          img(src=theme.author.head)
-        h3.name #{config.author}
-        p.signature #{theme.author.signature}
-
     block content
-
-    .page-footer
-      .top
-        ul.social
-          each social in theme.social
-            li
-              a(href=social.link, title=social.name, target="_blank")
-                i(class='icon icon-' + social.icon)
-      .bottom
-        p.copyright POWER BY CCWEBSITE.COM
-
+    include ./_partial/footer.pug
     block script

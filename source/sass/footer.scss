@@ -10,9 +10,7 @@
         padding: 0 15px;
         a {
           color: $color-white;
-          &:hover {
-            color: $color-belizeHole;
-          }
+          @include link-hover;
         }
       }
     }

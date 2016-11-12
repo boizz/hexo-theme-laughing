@@ -1,5 +1,6 @@
 # Header
-background: /default_images/head-bg.jpg
+page_background: /default_images/page_background.jpg
+post_background: /default_images/page_background.jpg
 author:
   head: /default_images/author_head.gif
   name: Laughing Gor

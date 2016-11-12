@@ -1,0 +1,6 @@
+@mixin link-hover {
+  transition: color .3s;
+  &:hover {
+    color: $color-belizeHole;
+  }
+}

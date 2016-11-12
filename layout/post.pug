@@ -1,3 +1,4 @@
-extends ./_layout
+extends ./_layout.pug
 block content
-  div #{site}
+  include ./_partial/post_header.pug
+  div !{page.content}

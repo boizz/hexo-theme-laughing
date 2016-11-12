@@ -2,7 +2,7 @@
   max-width: 600px;
   margin: 72px auto 0 auto;
   padding: 0 36px;
-  li {
+  >li {
     margin-bottom: 80px;
     p.date, h4.title {
       font-weight: bold;
@@ -18,9 +18,7 @@
       margin: 10px 0;
       a {
         color: $color-midnightBlue;
-        &:hover {
-          color: $color-belizeHole;
-        }
+        @include link-hover;
       }
     }
     .excerpt, .excerpt * {
@@ -29,9 +27,7 @@
       line-height: 1.5;
       a {
         text-decoration: underline;
-        &:hover {
-          color: $color-belizeHole;
-        }
+        @include link-hover;
       }
     }
     .meta {
@@ -41,9 +37,24 @@
       padding: 22px 10px;
       font-size: .75rem;
       color: $color-asbestos;
-      li {
+      >li {
         margin-right: 22px;
         display: inline-block;
+        i, li {
+          margin-right: .5em;
+        }
+        ul, li {
+          display: inline;
+        }
+        li {
+          a {
+            color: $color-asbestos;
+            @include link-hover;
+          }
+          span {
+            display: none;
+          }
+        }
       }
     }
   }
