@@ -5,7 +5,7 @@ block content
       li 
         p.date #{time(post.date, 'LL')}
         h4.title
-          a(href=post.path) #{post.title}
+          a(href=url_for(post.path)) #{post.title}
         .excerpt !{post.excerpt}
         .meta
           p.author Author: #{config.author}

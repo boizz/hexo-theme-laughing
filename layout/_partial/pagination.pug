@@ -1,8 +1,8 @@
 ul.pagination
   if page.prev
     li.link
-      a(href=page.prev_link) #{page.prev}
+      a(href=url_for(page.prev_link)) #{page.prev}
   li.current #{page.current}
   if page.next
     li.link
-      a(href=page.next_link) #{page.next}
+      a(href=url_for(page.next_link)) #{page.next}
