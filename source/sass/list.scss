@@ -1,0 +1,48 @@
+.post-list {
+  max-width: 600px;
+  margin: 72px auto 0 auto;
+  padding: 0 36px;
+  li {
+    margin-bottom: 80px;
+    p.date, h4.title {
+      font-weight: bold;
+      line-height: 2.2;
+    }
+    p.date {
+      font-size: .75rem;
+      color: $color-midnightBlue;
+    }
+    h4.title {
+      font-size: 1.2rem;
+      a {
+        color: $color-midnightBlue;
+        &:hover {
+          color: $color-belizeHole;
+        }
+      }
+    }
+    .excerpt, .excerpt * {
+      font-size: .9rem;
+      color: $color-asbestos;
+      line-height: 1.5;
+      a {
+        text-decoration: underline;
+        &:hover {
+          color: $color-belizeHole;
+        }
+      }
+    }
+    .meta {
+      margin-top: 20px;
+      border: 1px solid $color-cloud;
+      border-width: 1px 0;
+      padding: 22px 10px;
+      font-size: .75rem;
+      color: $color-asbestos;
+      p {
+        margin-right: 22px;
+        display: inline-block;
+      }
+    }
+  }
+}

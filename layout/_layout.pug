@@ -1,0 +1,31 @@
+doctype html
+html(lang="zh-cn")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport",content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no")
+    meta(name="format-detection",content="telephone=no")
+    meta(name="format-detection",content="email=no")
+    title #{page.title || config.title}
+    link(rel="stylesheet", href="/css/main_style.min.css")
+  body
+    .page-header
+      .background
+        img(src=theme.background)
+      .author
+        .head
+          img(src=theme.author.head)
+        h3.name #{config.author}
+        p.signature #{theme.author.signature}
+
+    block content
+
+    .page-footer
+      .top
+        ul.social
+          each social in theme.social
+            li
+              a(href=social.link, target="_blank") #{social.name}
+      .bottom
+        p.copyright POWER BY CCWEBSITE.COM
+
+    block script

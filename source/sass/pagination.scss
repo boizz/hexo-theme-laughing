@@ -1,0 +1,27 @@
+.pagination {
+  text-align: center;
+  margin-bottom: 80px;
+  li {
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: .85rem;
+    margin: 3px;
+    color: $color-wetAsphalt;
+    &.current {
+      background: $color-cloud;
+    }
+    &.link {
+      a {
+        color: $color-wetAsphalt;
+        &:hover {
+          color: $color-belizeHole;
+        }
+      }
+    }
+  }
+}

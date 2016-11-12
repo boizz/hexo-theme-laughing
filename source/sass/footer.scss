@@ -1,0 +1,29 @@
+.page-footer {
+  .top {
+    background: $color-midnightBlue;
+    padding: 110px 15px;
+    .social {
+      text-align: center;
+      font-weight: bold;
+      li {
+        display: inline-block;
+        padding: 0 15px;
+        a {
+          color: $color-white;
+          &:hover {
+            color: $color-belizeHole;
+          }
+        }
+      }
+    }
+  }
+  .bottom {
+    background: $color-wetAsphalt;
+    padding: 30px 15px;
+    .copyright {
+      text-align: center;
+      color: $color-cloud;
+      font-size: .9rem;
+    }
+  }
+}

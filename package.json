@@ -1,0 +1,12 @@
+{
+  "name": "hexo-theme-ccwebsite",
+  "version": "0.0.1",
+  "private": true,
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-concurrent": "^2.3.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}

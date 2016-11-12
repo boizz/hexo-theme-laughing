@@ -1,0 +1,14 @@
+# Header
+background: /default_images/head-bg.jpg
+author:
+  head: /default_images/author_head.gif
+  name: Laughing Gor
+  signature: Only when you plant the flowers can you really smell their fragrance.
+# Footer
+social:
+  - name: GitHub
+    link: http://github.com/BoizZ
+  - name: Weibo
+    link: http://weibo.com/heqibang
+  - name: SegmentFault
+    link: http://www.segmentfault.com/u/bon
