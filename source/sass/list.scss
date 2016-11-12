@@ -6,14 +6,16 @@
     margin-bottom: 80px;
     p.date, h4.title {
       font-weight: bold;
-      line-height: 2.2;
     }
     p.date {
       font-size: .75rem;
+      line-height: 2.2;
       color: $color-midnightBlue;
     }
     h4.title {
       font-size: 1.2rem;
+      line-height: 1.5;
+      margin: 10px 0;
       a {
         color: $color-midnightBlue;
         &:hover {
