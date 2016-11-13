@@ -1,0 +1,68 @@
+.article-comment {
+  max-width: 600px;
+  padding: 0 36px;
+  margin: 0 auto 72px auto;
+  #ds-thread {
+    #ds-reset {
+      .ds-meta {
+        border-bottom:  1px solid $color-silver;
+        a.ds-like-thread-button {
+          border: 1px solid $color-silver;
+          color: $color-asbestos;
+          background: $color-white;
+        }
+      }
+      .ds-sort {
+        a {
+          color: $color-asbestos;
+          @include link-hover;
+          &.ds-current {
+            color: $color-belizeHole;
+          }
+        }
+      }
+      li.ds-tab {
+        a.ds-current {
+          border: 1px solid $color-silver;
+          background: $color-white;
+          @include link-hover;
+        }
+      }
+      .ds-comments {
+        border-bottom: 1px solid $color-cloud;
+        color: $color-midnightBlue;
+      }
+      li.ds-post {
+        border-top: 0;
+      }
+      .ds-post-self {
+        border-top: 1px solid $color-cloud;
+      }
+      .ds-textarea-wrapper {
+        border: 1px solid $color-silver;
+        border-width: 1px 1px 0 1px;
+        background: $color-white;
+        textarea {
+          color: $color-wetAsphalt;
+        }
+      }
+      .ds-post-toolbar {
+        box-shadow: none;
+      }
+      .ds-post-options {
+        border: 1px solid $color-silver;
+        border-top-color: $color-cloud;
+        border-right: none;
+      }
+      .ds-gradient-bg {
+        background: $color-white;
+      }
+      .ds-post-button {
+        background: $color-cloud;
+        border: 1px solid $color-silver;
+        border-top-color: $color-cloud;
+        border-left-color: $color-cloud;
+      }
+    }
+  }
+}

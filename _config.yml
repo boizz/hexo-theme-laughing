@@ -1,9 +1,8 @@
 # Header
 page_background: /default_images/page_background.jpg
-post_background: /default_images/page_background.jpg
+post_background: /default_images/post_background.jpg
 author:
   head: /default_images/author_head.gif
-  name: Laughing Gor
   signature: Only when you plant the flowers can you really smell their fragrance.
 # Footer
 ## Social icon list: [facebook, twitter, weibo, wechat, github, stackoverflow, linkin, email, segmentfault, flickr]
@@ -17,3 +16,7 @@ social:
   - name: SegmentFault
     icon: segmentfault
     link: http://www.segmentfault.com/u/bon
+# Duoshuo
+duoshuo:
+  enable: true
+  siteName: ueibo

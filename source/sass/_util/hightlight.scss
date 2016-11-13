@@ -1,0 +1,159 @@
+/*
+ * Source files from https://github.com/pinggod/hexo-theme-apollo/blob/master/source/scss/_partial/post.scss
+ */
+
+code,
+pre {
+    font-size: 0.8em;
+    background-color: $color-cloud;
+    font-family: 'Roboto Mono', Monaco, courier, monospace;
+}
+
+code {
+  padding: 0.1em 0.4em;
+  background-color: $color-cloud;
+  border-radius: 3px;
+}
+
+pre {
+  .line {
+    min-height: 1em;
+  }
+}
+
+.highlight {
+    position: relative;
+    margin: 1em 0;
+    border-radius: 2px;
+    line-height: 1.1em;
+    background-color: $color-cloud;
+    overflow-x: auto;
+    table, tr, td {
+        width: 100%;
+        border-collapse: collapse;
+        padding: 0;
+        margin: 0;
+    }
+    .gutter {
+        display: none;
+    }
+    .code pre {
+        padding: 1.2em 1.4em;
+        line-height: 1.5em;
+        margin: 0;
+    }
+}
+
+%code-base {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: $color-silver;
+    text-align: right;
+    font-size: 0.75em;
+    padding: 5px 10px 0;
+    line-height: 15px;
+    height: 15px;
+    font-weight: 600;
+}
+
+@mixin code-signs($keys) {
+    @each $key in $keys {
+        .highlight.#{$key} .code:after {
+            content: to-upper-case($key);
+            @extend %code-base;
+        }
+    }
+}
+
+$signs: ("html", "js", "bash", "css", "scss","diff", "java", "xml", "python", "json", "swift", "ruby", "perl", "php", "c", "java", "cpp", "ts");
+@include code-signs($signs);
+
+.highlight.cpp .code:after {
+    content: 'C++';
+}
+
+pre {
+    color: $color-wetAsphalt;
+    .function .keyword,
+    .constant {
+       color: $color-peterRiver;
+    }
+    .keyword,
+    .attribute {
+        color: #e96900;
+    }
+    .number,
+    .literal {
+        color: $color-wisteria;
+    }
+    .tag,
+    .tag .title,
+    .change,
+    .winutils,
+    .flow,
+    .lisp .title,
+    .clojure .built_in,
+    .nginx .title,
+    .tex .special {
+        color: $color-belizeHole;
+    }
+    .symbol,
+    .symbol .string,
+    .value,
+    .regexp {
+        color: $color-turquoise;
+    }
+    .title {
+        color: $color-emerald;
+    }
+    .tag .value,
+    .string,
+    .subst,
+    .haskell .type,
+    .preprocessor,
+    .ruby .class .parent,
+    .built_in,
+    .sql .aggregate,
+    .django .template_tag,
+    .django .variable,
+    .smalltalk .class,
+    .javadoc,
+    .django .filter .argument,
+    .smalltalk .localvars,
+    .smalltalk .array,
+    .attr_selector,
+    .pseudo,
+    .addition,
+    .stream,
+    .envvar,
+    .apache .tag,
+    .apache .cbracket,
+    .tex .command,
+    .prompt {
+        color: $color-turquoise;
+    }
+    .comment,
+    .java .annotation,
+    .python .decorator,
+    .template_comment,
+    .pi,
+    .doctype,
+    .shebang,
+    .apache .sqbracket,
+    .tex .formula {
+        color: $color-concrete;
+    }
+    .deletion {
+        color: $color-powerGranate;
+    }
+    .coffeescript .javascript,
+    .javascript .xml,
+    .tex .formula,
+    .xml .javascript,
+    .xml .vbscript,
+    .xml .css,
+    .xml .cdata {
+        opacity: 0.5;
+    }
+}

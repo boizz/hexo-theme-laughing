@@ -2,10 +2,10 @@ ul.pagination
   if page.prev
     li.link
       a(href=url_for(page.prev_link))
-        i.icon.icon-arror-l
+        i.icon.icon-arror-left
   li.current
       a #{page.current}
   if page.next
     li.link
       a(href=url_for(page.next_link))
-        i.icon.icon-arror-r
+        i.icon.icon-arror-right

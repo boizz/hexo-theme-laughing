@@ -1,4 +1,27 @@
-extends ./_layout.pug
+extends ./_partial/layout.pug
 block content
   include ./_partial/post_header.pug
-  div !{page.content}
+  .article-content !{page.content}
+  .article-meta
+    if page.tags.length
+      .tags
+        i.icon.icon-tag
+        | !{list_tags(page.tags)}
+    if page.categories.length
+      .categories
+        i.icon.icon-category
+        | !{list_categories(page.categories)}
+  if theme.duoshuo.enable == true
+    .article-comment
+      #ds-thread.ds-thread(data-thread-key=page._id, data-title=page.title, data-url=url_for(page.path), site-name=theme.duoshuo.siteName)
+      script.
+        var siteName = document.getElementById('ds-thread').getAttribute('site-name');
+        var duoshuoQuery = {short_name: siteName};
+        (function() {
+          var ds = document.createElement('script');
+          ds.type = 'text/javascript';ds.async = true;
+          ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+          ds.charset = 'UTF-8';
+          (document.getElementsByTagName('head')[0] 
+          || document.getElementsByTagName('body')[0]).appendChild(ds);
+        })();
