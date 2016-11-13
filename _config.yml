@@ -1,0 +1,22 @@
+# Header
+page_background: /default_images/page_background.jpg
+post_background: /default_images/post_background.jpg
+author:
+  head: /default_images/author_head.gif
+  signature: Only when you plant the flowers can you really smell their fragrance.
+# Footer
+## Social icon list: [facebook, twitter, weibo, wechat, github, stackoverflow, linkin, email, segmentfault, flickr]
+social:
+  - name: GitHub
+    icon: github
+    link: http://github.com/BoizZ
+  - name: Weibo
+    icon: weibo
+    link: http://weibo.com/heqibang
+  - name: SegmentFault
+    icon: segmentfault
+    link: http://www.segmentfault.com/u/bon
+# Duoshuo
+duoshuo:
+  enable: true
+  siteName: ueibo

@@ -1,0 +1,21 @@
+extends ./_partial/layout.pug
+block content
+  include ./_partial/page_header.pug
+  ul.post-list
+    each post in page.posts.data
+      li 
+        p.date #{time(post.date, 'LL')}
+        h4.title
+          a(href=url_for(post.path)) #{post.title}
+        .excerpt !{post.excerpt}
+        ul.meta
+          li
+            i.icon.icon-author
+            | #{config.author}
+          li
+            i.icon.icon-clock
+            | #{parseInt(post.content ? post.content.length/900 : 0)} Minutes
+          li
+            i.icon.icon-category
+            | !{list_categories(post.categories)}
+  include ./_partial/pagination.pug

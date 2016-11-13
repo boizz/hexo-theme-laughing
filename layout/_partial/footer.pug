@@ -1,0 +1,9 @@
+.page-footer
+  .top
+    ul.social
+      each social in theme.social
+        li
+          a(href=social.link, title=social.name, target="_blank")
+            i(class='icon icon-' + social.icon)
+  .bottom
+    p.copyright POWER BY CCWEBSITE.COM

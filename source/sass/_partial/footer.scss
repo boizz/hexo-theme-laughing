@@ -1,0 +1,28 @@
+.page-footer {
+  .top {
+    background: $color-midnightBlue;
+    padding: 110px 15px;
+    .social {
+      text-align: center;
+      font-size: 1.6rem;
+      li {
+        display: inline-block;
+        padding: 0 15px;
+        a {
+          color: $color-white;
+          @include link-hover;
+        }
+      }
+    }
+  }
+  .bottom {
+    background: $color-wetAsphalt;
+    padding: 30px 15px;
+    .copyright {
+      font-size: .7rem;
+      text-align: center;
+      color: $color-asbestos;
+      font-size: .9rem;
+    }
+  }
+}
