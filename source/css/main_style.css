@@ -234,6 +234,14 @@ td, th {
   content: "\e619";
 }
 
+.icon-calendar:before {
+  content: "\e603";
+}
+
+.icon-author:before {
+  content: "\e608";
+}
+
 .icon-wechat:before {
   content: "\e600";
 }
@@ -244,10 +252,6 @@ td, th {
 
 .icon-stackoverflow:before {
   content: "\e8a7";
-}
-
-.icon-author:before {
-  content: "\e663";
 }
 
 .icon-linkin:before {
@@ -266,11 +270,11 @@ td, th {
   content: "\e610";
 }
 
-.icon-arror-r:before {
+.icon-arror-right:before {
   content: "\e617";
 }
 
-.icon-arror-l:before {
+.icon-arror-left:before {
   content: "\e618";
 }
 
@@ -287,18 +291,18 @@ td, th {
 }
 
 /*
- * From https://github.com/pinggod/hexo-theme-apollo/blob/master/source/scss/_partial/post.scss
+ * Source files from https://github.com/pinggod/hexo-theme-apollo/blob/master/source/scss/_partial/post.scss
  */
 code,
 pre {
   font-size: 0.8em;
-  background-color: #f8f8f8;
+  background-color: #ecf0f1;
   font-family: 'Roboto Mono', Monaco, courier, monospace;
 }
 
 code {
-  padding: 0.2em 0.4em;
-  background-color: #efefef;
+  padding: 0.1em 0.4em;
+  background-color: #ecf0f1;
   border-radius: 3px;
 }
 
@@ -311,8 +315,7 @@ pre .line {
   margin: 1em 0;
   border-radius: 2px;
   line-height: 1.1em;
-  background-color: #f8f8f8;
-  border: 1px solid #eeeeee;
+  background-color: #ecf0f1;
   overflow-x: auto;
 }
 .highlight table, .highlight tr, .highlight td {
@@ -334,7 +337,7 @@ pre .line {
   position: absolute;
   top: 0;
   right: 0;
-  color: #ccc;
+  color: #bdc3c7;
   text-align: right;
   font-size: 0.75em;
   padding: 5px 10px 0;
@@ -420,11 +423,11 @@ pre .line {
 }
 
 pre {
-  color: #525252;
+  color: #34495e;
 }
 pre .function .keyword,
 pre .constant {
-  color: #0092db;
+  color: #3498db;
 }
 pre .keyword,
 pre .attribute {
@@ -432,7 +435,7 @@ pre .attribute {
 }
 pre .number,
 pre .literal {
-  color: #ae81ff;
+  color: #8e44ad;
 }
 pre .tag,
 pre .tag .title,
@@ -443,16 +446,16 @@ pre .lisp .title,
 pre .clojure .built_in,
 pre .nginx .title,
 pre .tex .special {
-  color: #2973b7;
+  color: #2980b9;
 }
 pre .symbol,
 pre .symbol .string,
 pre .value,
 pre .regexp {
-  color: #42b983;
+  color: #1abc9c;
 }
 pre .title {
-  color: #83B917;
+  color: #2ecc71;
 }
 pre .tag .value,
 pre .string,
@@ -478,7 +481,7 @@ pre .apache .tag,
 pre .apache .cbracket,
 pre .tex .command,
 pre .prompt {
-  color: #42b983;
+  color: #1abc9c;
 }
 pre .comment,
 pre .java .annotation,
@@ -489,10 +492,10 @@ pre .doctype,
 pre .shebang,
 pre .apache .sqbracket,
 pre .tex .formula {
-  color: #b3b3b3;
+  color: #95a5a6;
 }
 pre .deletion {
-  color: #BA4545;
+  color: #c0392b;
 }
 pre .coffeescript .javascript,
 pre .javascript .xml,
@@ -504,6 +507,17 @@ pre .xml .cdata {
   opacity: 0.5;
 }
 
+html, body {
+  -webkit-user-select: text;
+  user-select: text;
+}
+
+@media screen and (max-width: 1024px) {
+  html, body {
+    -webkit-user-select: none;
+    user-select: none;
+  }
+}
 .page-header .background {
   width: 100%;
   height: 550px;
@@ -524,7 +538,7 @@ pre .xml .cdata {
 .page-header .author {
   background: #ecf0f1;
   text-align: center;
-  padding-bottom: 30px;
+  padding: 0 20px 30px 20px;
 }
 .page-header .author .head {
   display: inline-block;
@@ -677,9 +691,20 @@ pre .xml .cdata {
   padding: 30px 15px;
 }
 .page-footer .bottom .copyright {
+  font-size: .8rem;
   text-align: center;
-  color: #ecf0f1;
-  font-size: .9rem;
+  color: #95a5a6;
+}
+.page-footer .bottom .copyright small {
+  color: #7f8c8d;
+}
+.page-footer .bottom .copyright small a {
+  color: #7f8c8d;
+  text-decoration: underline;
+  transition: color .3s;
+}
+.page-footer .bottom .copyright small a:hover {
+  color: #2980b9;
 }
 
 .post-list {
@@ -751,12 +776,160 @@ pre .xml .cdata {
   display: none;
 }
 
-.post {
+.article-content, .article-meta {
   max-width: 600px;
-  margin: 72px auto 0 auto;
   padding: 0 36px;
-  color: #2c3e50;
+  line-height: 2;
+}
+
+.article-content {
+  margin: 72px auto 48px auto;
   font-weight: 300;
+  color: #2c3e50;
+}
+.article-content a {
+  color: #2980b9;
+}
+.article-content h1 {
+  margin: .7rem 0 .3rem 0;
+}
+.article-content h2 {
+  margin: .6rem 0 .3rem 0;
+}
+.article-content h3, .article-content h4, .article-content h5, .article-content h6 {
+  margin-top: .5rem;
+}
+.article-content h3 code, .article-content h4 code, .article-content h5 code, .article-content h6 code {
+  color: #c0392b;
+}
+.article-content code {
+  margin: 0 .3em;
+}
+.article-content p code, .article-content li code {
+  color: #c0392b;
+}
+.article-content ul {
+  padding-left: 20px;
+}
+.article-content ul li {
+  list-style: disc;
+}
+.article-content ol {
+  padding-left: 20px;
+}
+.article-content ol li {
+  list-style: decimal;
+}
+.article-content blockquote {
+  margin: .5rem 0;
+  padding: 5px 5px 5px 15px;
+  border-left: 5px solid #2980b9;
+  line-height: 1.6;
+  font-size: .9rem;
+  background: #ecf0f1;
+}
+.article-content img {
+  max-width: 100%;
+}
+
+.article-meta {
+  margin: 0 auto 72px auto;
+  font-size: .9rem;
+  color: #7f8c8d;
+}
+.article-meta .tags, .article-meta .categories {
+  margin-bottom: 5px;
+}
+.article-meta .tags > i, .article-meta .categories > i {
+  display: block;
+  float: left;
+  margin-right: 1em;
+}
+.article-meta li {
+  display: inline-block;
+  margin-right: .8em;
+}
+.article-meta li a {
+  margin-right: .3em;
+  text-decoration: underline;
+  color: #7f8c8d;
+  transition: color .3s;
+}
+.article-meta li a:hover {
+  color: #2980b9;
+}
+.article-meta li span {
+  padding: .02em .3em;
+  border-radius: 2px;
+  background: #ecf0f1;
+  font-size: .85em;
+}
+
+.article-comment {
+  max-width: 600px;
+  padding: 0 36px;
+  margin: 0 auto 72px auto;
+}
+.article-comment #ds-thread #ds-reset .ds-meta {
+  border-bottom: 1px solid #bdc3c7;
+}
+.article-comment #ds-thread #ds-reset .ds-meta a.ds-like-thread-button {
+  border: 1px solid #bdc3c7;
+  color: #7f8c8d;
+  background: white;
+}
+.article-comment #ds-thread #ds-reset .ds-sort a {
+  color: #7f8c8d;
+  transition: color .3s;
+}
+.article-comment #ds-thread #ds-reset .ds-sort a:hover {
+  color: #2980b9;
+}
+.article-comment #ds-thread #ds-reset .ds-sort a.ds-current {
+  color: #2980b9;
+}
+.article-comment #ds-thread #ds-reset li.ds-tab a.ds-current {
+  border: 1px solid #bdc3c7;
+  background: white;
+  transition: color .3s;
+}
+.article-comment #ds-thread #ds-reset li.ds-tab a.ds-current:hover {
+  color: #2980b9;
+}
+.article-comment #ds-thread #ds-reset .ds-comments {
+  border-bottom: 1px solid #ecf0f1;
+  color: #2c3e50;
+}
+.article-comment #ds-thread #ds-reset li.ds-post {
+  border-top: 0;
+}
+.article-comment #ds-thread #ds-reset .ds-post-self {
+  border-top: 1px solid #ecf0f1;
+}
+.article-comment #ds-thread #ds-reset .ds-textarea-wrapper {
+  border: 1px solid #bdc3c7;
+  border-width: 1px 1px 0 1px;
+  background: white;
+}
+.article-comment #ds-thread #ds-reset .ds-textarea-wrapper textarea {
+  color: #34495e;
+}
+.article-comment #ds-thread #ds-reset .ds-post-toolbar {
+  box-shadow: none;
+}
+.article-comment #ds-thread #ds-reset .ds-post-options {
+  border: 1px solid #bdc3c7;
+  border-top-color: #ecf0f1;
+  border-right: none;
+}
+.article-comment #ds-thread #ds-reset .ds-gradient-bg {
+  background: white;
+}
+.article-comment #ds-thread #ds-reset .ds-post-button {
+  background: #ecf0f1;
+  border: 1px solid #bdc3c7;
+  border-top-color: #ecf0f1;
+  border-left-color: #ecf0f1;
 }
 
 .pagination {

@@ -6,9 +6,9 @@
 
 响应式布局，宽松设计，还原最佳阅读体验。
 
-![电脑界面](http://callfiles.ccwebsite.com/hexo-theme-laughing/pc.jpg)
+![电脑界面](http://callfiles.ccwebsite.com/hexo-theme-laughing/pc_1200.jpg)
 
-![手机界面](http://callfiles.ccwebsite.com/hexo-theme-laughing/phone.jpg)
+![手机界面](http://callfiles.ccwebsite.com/hexo-theme-laughing/phone_1200.jpg)
 
 ## 功能
 
@@ -19,6 +19,12 @@
 ## 配置文档
 
 主题的配置都放在了 `_config.yml` 文件里面。
+
+### 网站图标
+
+``` yaml
+favicon: /favicon.ico
+```
 
 ### 页面和文章背景
 
@@ -68,4 +74,16 @@ social:
 duoshuo:
   enable: true
   siteName: ueibo
+```
+
+### 版权
+
+``` yaml
+## record: 备案名称（若无则填写 false）
+## hexo: 是否显示“POWER BY HEXO”
+## laughing：是否显示“THEME BY LAUGHING”
+copyright:
+  record: false
+  hexo: true
+  laughing: true
 ```

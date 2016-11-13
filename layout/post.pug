@@ -3,15 +3,15 @@ block content
   include ./_partial/post_header.pug
   .article-content !{page.content}
   .article-meta
-    if page.tags.length
+    if page.tags && page.tags.length
       .tags
         i.icon.icon-tag
         | !{list_tags(page.tags)}
-    if page.categories.length
+    if page.tags && page.categories.length
       .categories
         i.icon.icon-category
         | !{list_categories(page.categories)}
-  if theme.duoshuo.enable == true
+  if theme.duoshuo.enable
     .article-comment
       #ds-thread.ds-thread(data-thread-key=page._id, data-title=page.title, data-url=url_for(page.path), site-name=theme.duoshuo.siteName)
       script.
