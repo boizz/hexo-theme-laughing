@@ -4,6 +4,18 @@
       each social in theme.social
         li
           a(href=social.link, title=social.name, target="_blank")
-            i(class='icon icon-' + social.icon)
+            i(class="icon icon-" + social.icon)
   .bottom
-    p.copyright POWER BY CCWEBSITE.COM
+    p.copyright
+      | © #{new Date().getFullYear()} #{config.title}
+      if theme.copyright.record
+        br
+        small
+          a(href="http://www.miitbeian.gov.cn", target="_blank") #{theme.copyright.record}
+      if theme.copyright.hexo
+        br
+        small POWER BY 
+          a(href="https://hexo.io", target="_blank") HEXO
+      if theme.copyright.laughing
+        small , THEME BY 
+          a(href="https://github.com/BoizZ/hexo-theme-laughing", target="_blank") LAUGHING

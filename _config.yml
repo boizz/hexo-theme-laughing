@@ -1,3 +1,5 @@
+# Icon
+favicon: /favicon.ico
 # Header
 page_background: /default_images/page_background.jpg
 post_background: /default_images/post_background.jpg
@@ -20,3 +22,8 @@ social:
 duoshuo:
   enable: true
   siteName: ueibo
+# Copyright
+copyright:
+  record: false
+  hexo: true
+  laughing: true

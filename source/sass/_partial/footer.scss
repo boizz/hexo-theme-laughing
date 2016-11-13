@@ -19,10 +19,17 @@
     background: $color-wetAsphalt;
     padding: 30px 15px;
     .copyright {
-      font-size: .7rem;
+      font-size: .8rem;
       text-align: center;
-      color: $color-asbestos;
-      font-size: .9rem;
+      color: $color-concrete;
+      small {
+        color: $color-asbestos;
+        a {
+          color: $color-asbestos;
+          text-decoration: underline;
+          @include link-hover;
+        }
+      }
     }
   }
 }
