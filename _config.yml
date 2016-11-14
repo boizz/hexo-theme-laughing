@@ -1,5 +1,7 @@
 # Icon
 favicon: /favicon.ico
+# SEO
+keywords: Hexo, Gruntjs, Nodejs, Reactjs, Vuejs
 # Header
 page_background: /default_images/page_background.jpg
 post_background: /default_images/post_background.jpg

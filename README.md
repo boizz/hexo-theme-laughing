@@ -2,6 +2,8 @@
 
 简单轻量的[hexo](https://hexo.io)主题。
 
+Demo: [lalala.lol](http://lalala.lol)
+
 ## 外观
 
 响应式布局，宽松设计，还原最佳阅读体验。
@@ -24,6 +26,15 @@
 
 ``` yaml
 favicon: /favicon.ico
+```
+
+### SEO
+
+站点标题、副标题、描述沿用站点的配置。
+
+``` yaml
+## 关键字
+keywords: Hexo, Gruntjs, Nodejs, Reactjs, Vuejs
 ```
 
 ### 页面和文章背景
