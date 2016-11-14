@@ -50,8 +50,18 @@
     font-size: .9rem;
     background: $color-cloud;
   }
-  img {
+  img, video, iframe {
     max-width: 100%;
+  }
+  table {
+    font-size: .9rem;
+    th, tr:nth-child(even) {
+      background: $color-cloud;
+    }
+    th, td {
+      border: 1px solid $color-silver;
+      padding: .2em .5em;
+    }
   }
 }
 .article-meta {

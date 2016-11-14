@@ -507,12 +507,20 @@ pre .xml .cdata {
   opacity: 0.5;
 }
 
+html {
+  font-family: "Microsoft YaHei UI", "Microsoft YaHei", sans-serif;
+}
+
 html, body {
   -webkit-user-select: text;
   user-select: text;
 }
 
 @media screen and (max-width: 1024px) {
+  html {
+    font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+  }
+
   html, body {
     -webkit-user-select: none;
     user-select: none;
@@ -673,7 +681,7 @@ html, body {
 }
 .page-footer .top .social {
   text-align: center;
-  font-size: 1.6rem;
+  font-size: 2.2rem;
 }
 .page-footer .top .social li {
   display: inline-block;
@@ -828,8 +836,12 @@ html, body {
   font-size: .9rem;
   background: #ecf0f1;
 }
-.article-content img {
+.article-content img, .article-content video, .article-content iframe {
   max-width: 100%;
+}
+.article-content table th, .article-content table td {
+  border: 1px solid #bdc3c7;
+  padding: .2em .4em;
 }
 
 .article-meta {
