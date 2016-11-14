@@ -1,8 +1,14 @@
+html {
+  font-family: "Microsoft YaHei UI", "Microsoft YaHei", sans-serif;
+}
 html, body {
   -webkit-user-select: text;
   user-select: text;
 }
 @media screen and (max-width: $screen-small) {
+  html {
+    font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+  }
   html, body {
     -webkit-user-select: none;
     user-select: none;
