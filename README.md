@@ -18,6 +18,22 @@ Demo: [lalala.lol](http://lalala.lol)
  - 支持多说评论，自由开启评论，主题定制样式
  - 简易二次开发
 
+## 安装
+
+ 1. 安装[hexo-render-pug](https://github.com/maxknee/hexo-render-pug)
+
+ ``` shell
+ npm install hexo-renderer-pug --save
+ ```
+
+ 2. 拷贝主题到`themes`目录
+
+ 3. 修改`_config.yml`文件
+
+  ``` yaml
+  theme: hexo-theme-laughing
+  ```
+
 ## 配置文档
 
 主题的配置都放在了 `_config.yml` 文件里面。
@@ -98,3 +114,32 @@ copyright:
   hexo: true
   laughing: true
 ```
+
+## 二次开发
+
+Laughing主题遵循简易开发模式，以文件层级及命名细分模块，二次开发比较简单。
+
+### 模板引擎
+
+Laughing主题使用`pug`作为模板引擎，在开发前请确保已经安装了[hexo-render-pug](https://github.com/maxknee/hexo-render-pug)插件，如未安装，请在`Hexo`程序根目录运行以下命令进行安装：
+
+```
+npm install hexo-renderer-pug --save
+```
+
+### 安装Grunt
+
+Laughing主题使用`sass`作为预编译样式语言，使用`grunt`监听文件变化并编译成css。当然，`sass`是基于`ruby`的，需要在电脑上安装`ruby`；
+
+进入主题目录，运行以下命令安装`grunt`以及其他依赖：
+
+```
+npm install
+```
+
+### 参考
+
+ - [GRUNT](http://gruntjs.com/)
+ - [PUG](https://pugjs.org/api/getting-started.html)
+ - [SASS](http://sass-lang.com/guide)
+ - [RUBY](https://www.ruby-lang.org)
