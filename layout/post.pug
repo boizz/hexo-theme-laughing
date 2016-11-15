@@ -1,7 +1,13 @@
 extends ./_partial/layout.pug
 block content
   include ./_partial/post_header.pug
-  .article-content !{page.content}
+  .article-content
+    if page.photos && page.photos.length
+      div
+        each photo in page.photos
+          a.article-gallery-img.fancybox(href=photo)
+            img(src=photo)
+    | !{page.content}
   .article-meta
     if page.tags && page.tags.length
       .tags
@@ -13,7 +19,7 @@ block content
         | !{list_categories(page.categories)}
   if theme.duoshuo.enable
     .article-comment
-      #ds-thread.ds-thread(data-thread-key=page._id, data-title=page.title, data-url=url_for(page.path), site-name=theme.duoshuo.siteName)
+      #ds-thread.ds-thread(data-thread-key=page._id, data-title=page.title, data-url=config.url + url_for(page.path), site-name=theme.duoshuo.siteName)
       script.
         var siteName = document.getElementById('ds-thread').getAttribute('site-name');
         var duoshuoQuery = {short_name: siteName};

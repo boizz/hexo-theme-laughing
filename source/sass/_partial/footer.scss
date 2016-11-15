@@ -24,11 +24,11 @@
       color: $color-concrete;
       small {
         color: $color-asbestos;
-        a {
-          color: $color-asbestos;
-          text-decoration: underline;
-          @include link-hover;
-        }
+      }
+      a {
+        color: $color-asbestos;
+        text-decoration: underline;
+        @include link-hover;
       }
     }
   }

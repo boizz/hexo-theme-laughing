@@ -5,6 +5,9 @@ html, body {
   -webkit-user-select: text;
   user-select: text;
 }
+a {
+  text-decoration: none;
+}
 @media screen and (max-width: $screen-small) {
   html {
     font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
