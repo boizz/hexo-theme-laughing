@@ -28,6 +28,11 @@ pre {
     line-height: 1.1em;
     background-color: $color-cloud;
     overflow-x: auto;
+    figcaption {
+        font-size: .9em;
+        padding: .4em;
+        border-bottom: 1px solid $color-silver;
+    }
     table, tr, td {
         width: 100%;
         border-collapse: collapse;

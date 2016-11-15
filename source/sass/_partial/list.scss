@@ -21,10 +21,15 @@
         @include link-hover;
       }
     }
-    .excerpt, .excerpt * {
+    .photo {
+      max-width: 100%;
+      max-height: 800px;
+    }
+    .excerpt, .excerpt *, .no-title {
       font-size: .9rem;
       color: $color-asbestos;
       line-height: 1.5;
+      margin: 0;
       a {
         text-decoration: underline;
         @include link-hover;
@@ -37,6 +42,9 @@
       padding: 22px 10px;
       font-size: .75rem;
       color: $color-asbestos;
+      ul {
+        padding-left: 0;
+      }
       >li {
         margin-right: 22px;
         display: inline-block;
@@ -53,6 +61,14 @@
           }
           span {
             display: none;
+          }
+          ul.category-list-child {
+            padding-left: .5em;
+            font-size: .9em;
+            &:before {
+              content: '>';
+              padding-right: .3em;
+            }
           }
         }
       }

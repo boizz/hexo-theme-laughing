@@ -59,7 +59,6 @@
       background: $color-cloud;
     }
     th, td {
-      border: 1px solid $color-silver;
       padding: .2em .5em;
     }
   }
@@ -76,6 +75,9 @@
       margin-right: 1em;
     }
   }
+  ul {
+    padding-left: 0;
+  }
   li {
     display: inline-block;
     margin-right: .8em;
@@ -90,6 +92,15 @@
       border-radius: 2px;
       background: $color-cloud;
       font-size: .85em;
+    }
+    ul.category-list-child {
+      padding-left: .5em;
+      display: inline-block;
+      font-size: .9em;
+      &:before {
+        content: '>';
+        padding-right: .3em;
+      }
     }
   }
 }

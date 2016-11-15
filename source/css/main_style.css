@@ -706,12 +706,12 @@ html, body {
 .page-footer .bottom .copyright small {
   color: #7f8c8d;
 }
-.page-footer .bottom .copyright small a {
+.page-footer .bottom .copyright a {
   color: #7f8c8d;
   text-decoration: underline;
   transition: color .3s;
 }
-.page-footer .bottom .copyright small a:hover {
+.page-footer .bottom .copyright a:hover {
   color: #2980b9;
 }
 
@@ -839,9 +839,15 @@ html, body {
 .article-content img, .article-content video, .article-content iframe {
   max-width: 100%;
 }
+.article-content table {
+  font-size: .9rem;
+}
+.article-content table th, .article-content table tr:nth-child(even) {
+  background: #ecf0f1;
+}
 .article-content table th, .article-content table td {
   border: 1px solid #bdc3c7;
-  padding: .2em .4em;
+  padding: .2em .5em;
 }
 
 .article-meta {

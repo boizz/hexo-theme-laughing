@@ -5,9 +5,15 @@ block content
     each post in page.posts.data
       li 
         p.date #{time(post.date, 'LL')}
-        h4.title
-          a(href=url_for(post.path)) #{post.title}
-        .excerpt !{post.excerpt}
+        if post.title
+          h4.title
+            a(href=url_for(post.path)) #{post.title}
+          .excerpt !{post.excerpt}
+        else
+          .no-title !{post.content}
+        if post.photos && post.photos.length
+          a(href=url_for(post.path))
+            img.photo(src=post.photos[0])
         ul.meta
           li
             i.icon.icon-author
