@@ -1,0 +1,35 @@
+ul.navication {
+  $icon-size: 30px;
+  padding-left: 0;
+  margin: 0;
+  position: fixed;
+  right: 15px;
+  bottom: 30px;
+  z-index: 99;
+  li {
+    margin-top: 12px;
+    list-style: none;
+    a {
+      display: block;
+      border-radius: 50%;
+      width: $icon-size;
+      height: $icon-size;
+      text-align: center;
+      line-height: $icon-size;
+      background: rgba($color-asbestos, .6);
+      color: $color-white;
+      transition: background .3s;
+      &:hover {
+        background: rgba($color-belizeHole, .9);
+      }
+    }
+    &.home {
+      font-size: 1.8rem;
+      a {
+        color: $color-asbestos;
+        background: none;
+        @include link-hover
+      }
+    }
+  }
+}

@@ -50,8 +50,11 @@
     font-size: .9rem;
     background: $color-cloud;
   }
-  img, video, iframe {
+  img {
     max-width: 100%;
+  }
+  video, iframe {
+    width: 100%;
   }
   table {
     font-size: .9rem;

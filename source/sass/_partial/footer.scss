@@ -3,6 +3,8 @@
     background: $color-midnightBlue;
     padding: 110px 15px;
     .social {
+      padding-left: 0;
+      margin: 0;
       text-align: center;
       font-size: 2.2rem;
       li {
@@ -22,6 +24,7 @@
       font-size: .8rem;
       text-align: center;
       color: $color-concrete;
+      margin: 0;
       small {
         color: $color-asbestos;
       }

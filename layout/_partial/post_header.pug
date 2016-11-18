@@ -1,7 +1,7 @@
 .post-header
   img.background(src=theme.post_background)
   .post-title
-    h1.title #{page.title}
+    h1.title #{page.title ? page.title : theme.title_plancehold}
     ul.meta
       li
         i.icon.icon-author

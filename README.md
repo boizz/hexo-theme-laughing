@@ -53,7 +53,7 @@ favicon: /favicon.ico
 keywords: Hexo, Gruntjs, Nodejs, Reactjs, Vuejs
 ```
 
-### 页面和文章背景
+### 页头
 
 ``` yaml
 ## 页面背景
@@ -61,6 +61,9 @@ page_background: /default_images/page_background.jpg
 
 ## 文章背景
 post_background: /default_images/post_background.jpg
+
+## 标题占位字：无标题类型文章的标题占位字
+title_plancehold: '随笔'
 ```
 
 ### 作者信息

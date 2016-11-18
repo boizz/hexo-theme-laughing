@@ -5,6 +5,7 @@ keywords: Hexo, Gruntjs, Nodejs, Reactjs, Vuejs
 # Header
 page_background: /default_images/page_background.jpg
 post_background: /default_images/post_background.jpg
+title_plancehold: 随笔
 author:
   head: /default_images/author_head.gif
   signature: Only when you plant the flowers can you really smell their fragrance.
