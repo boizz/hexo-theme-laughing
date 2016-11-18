@@ -8,6 +8,9 @@ html, body {
 a {
   text-decoration: none;
 }
+a, button, input, optgroup, select, textarea {
+    -webkit-tap-highlight-color: transparent;
+}
 @media screen and (max-width: $screen-small) {
   html {
     font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
