@@ -773,6 +773,10 @@ a {
   text-decoration: none;
 }
 
+a, button, input, optgroup, select, textarea {
+  -webkit-tap-highlight-color: transparent;
+}
+
 @media screen and (max-width: 1024px) {
   html {
     font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
@@ -937,6 +941,8 @@ a {
   padding: 110px 15px;
 }
 .page-footer .top .social {
+  padding-left: 0;
+  margin: 0;
   text-align: center;
   font-size: 2.2rem;
 }
@@ -959,6 +965,7 @@ a {
   font-size: .8rem;
   text-align: center;
   color: #95a5a6;
+  margin: 0;
 }
 .page-footer .bottom .copyright small {
   color: #7f8c8d;
@@ -1109,8 +1116,11 @@ a {
   font-size: .9rem;
   background: #ecf0f1;
 }
-.article-content img, .article-content video, .article-content iframe {
+.article-content img {
   max-width: 100%;
+}
+.article-content video, .article-content iframe {
+  width: 100%;
 }
 .article-content table {
   font-size: .9rem;
@@ -1237,6 +1247,7 @@ a {
 .pagination {
   text-align: center;
   margin-bottom: 80px;
+  padding-left: 0;
 }
 .pagination li {
   display: inline-block;
@@ -1260,6 +1271,44 @@ a {
   transition: color .3s;
 }
 .pagination li.link a:hover {
+  color: #2980b9;
+}
+
+ul.navication {
+  padding-left: 0;
+  margin: 0;
+  position: fixed;
+  right: 15px;
+  bottom: 30px;
+  z-index: 99;
+}
+ul.navication li {
+  margin-top: 12px;
+  list-style: none;
+}
+ul.navication li a {
+  display: block;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  background: rgba(189, 195, 199, 0.6);
+  color: white;
+  transition: background .3s;
+}
+ul.navication li a:hover {
+  background: rgba(41, 128, 185, 0.9);
+}
+ul.navication li.home {
+  font-size: 1.8rem;
+}
+ul.navication li.home a {
+  color: rgba(189, 195, 199, 0.6);
+  background: none;
+  transition: color .3s;
+}
+ul.navication li.home a:hover {
   color: #2980b9;
 }
 
