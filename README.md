@@ -1,4 +1,4 @@
-# Laughing theme for hexo
+# Laughing theme for hexo ![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg) ![Hexo](https://img.shields.io/badge/hexo-3.2.0-blue.svg) ![Build Status](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
 
 简单轻量的[hexo](https://hexo.io)主题。
 
