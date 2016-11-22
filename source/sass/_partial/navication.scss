@@ -16,7 +16,7 @@ ul.navication {
       height: $icon-size;
       text-align: center;
       line-height: $icon-size;
-      background: rgba($color-asbestos, .6);
+      background: rgba($color-silver, .6);
       color: $color-white;
       transition: background .3s;
       &:hover {
@@ -26,7 +26,7 @@ ul.navication {
     &.home {
       font-size: 1.8rem;
       a {
-        color: $color-asbestos;
+        color: rgba($color-silver, .6);
         background: none;
         @include link-hover
       }
