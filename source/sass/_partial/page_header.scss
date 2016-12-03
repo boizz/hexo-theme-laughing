@@ -37,16 +37,18 @@
         border-radius: 50%;
       }
     }
+    .name, .signature {
+      position: relative;
+      margin: 0;
+    }
     .name {
       font-size: 1.3rem;
       color: $color-midnightBlue;
-      position: relative;
       top: -50px;
     }
     .signature {
       font-size: .95rem;
       color: $color-asbestos;
-      position: relative;
       top: -35px;
     }
   }
