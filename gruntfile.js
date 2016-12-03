@@ -2,16 +2,16 @@ module.exports = function (grunt) {
 
     grunt.initConfig({
         watch: {
-            js: {
-                files: ['source/js/**'],
-                tasks: ['uglify:buildmin'],
-                options: {
-                    livereload: true
-                }
-            },
+            // js: {
+            //     files: ['source/js/**'],
+            //     tasks: ['uglify:buildmin'],
+            //     options: {
+            //         livereload: true
+            //     }
+            // },
             css: {
                 files: ['source/sass/**'],
-                tasks: ['sass:compressd']
+                tasks: ['sass:compressd', 'sass:expanded']
             }
         },
         sass: {

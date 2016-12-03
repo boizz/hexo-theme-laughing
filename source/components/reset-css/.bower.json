@@ -1,0 +1,14 @@
+{
+  "name": "reset-css",
+  "homepage": "https://github.com/BoizZ/reset-css",
+  "_release": "59a1b976b6",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "59a1b976b64e22c3256ebdfc02e0d046fbc5c20e"
+  },
+  "_source": "https://github.com/BoizZ/reset-css.git",
+  "_target": "*",
+  "_originalSource": "BoizZ/reset-css",
+  "_direct": true
+}
