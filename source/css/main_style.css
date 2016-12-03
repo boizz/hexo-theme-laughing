@@ -531,28 +531,11 @@ pre .xml .cdata {
   opacity: 0.5;
 }
 
-html {
-  font-family: "Microsoft YaHei UI", "Microsoft YaHei", sans-serif;
-}
-
-html, body {
-  -webkit-user-select: text;
-  user-select: text;
-}
-
 a {
   text-decoration: none;
 }
 
-a, button, input, optgroup, select, textarea {
-  -webkit-tap-highlight-color: transparent;
-}
-
 @media screen and (max-width: 1024px) {
-  html {
-    font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
-  }
-
   html, body {
     -webkit-user-select: none;
     user-select: none;
@@ -597,16 +580,18 @@ a, button, input, optgroup, select, textarea {
   display: block;
   border-radius: 50%;
 }
+.page-header .author .name, .page-header .author .signature {
+  position: relative;
+  margin: 0;
+}
 .page-header .author .name {
   font-size: 1.3rem;
   color: #2c3e50;
-  position: relative;
   top: -50px;
 }
 .page-header .author .signature {
   font-size: .95rem;
   color: #7f8c8d;
-  position: relative;
   top: -35px;
 }
 
