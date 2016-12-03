@@ -1,0 +1,23 @@
+{
+  "name": "reset-css",
+  "version": "2.0.0",
+  "description": "A configurable reset style sheet",
+  "scripts": {
+    "test": "grunt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BoizZ/reset-css.git"
+  },
+  "author": "Bon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BoizZ/reset-css/issues"
+  },
+  "homepage": "https://github.com/BoizZ/reset-css#readme",
+  "devDependencies": {
+    "grunt-concurrent": "^2.3.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}

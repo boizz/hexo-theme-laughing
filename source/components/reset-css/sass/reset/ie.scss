@@ -1,0 +1,78 @@
+html {
+  -ms-text-size-adjust: 100%;
+}
+
+article, aside, footer, header, nav, section {
+  display: block;
+}
+
+figcaption, figure, main {
+  display: block;
+}
+
+figure {
+  margin: 1em 40px;
+}
+
+hr {
+  overflow: visible;
+}
+
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: object;
+}
+
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+audio, video {
+  display: inline-block;
+}
+
+img {
+  border-style: none;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+button, input {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  white-space: normal;
+}
+
+progress {
+  display: inline-block;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type="checkbox"], [type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+details, menu {
+  display: list-item;
+}
+
+canvas {
+  display: inline-block;
+}
