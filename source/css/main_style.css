@@ -739,6 +739,7 @@ a {
   max-width: 600px;
   margin: 72px auto 0 auto;
   padding: 0 36px;
+  list-style: none;
 }
 .post-list > li {
   margin-bottom: 80px;
