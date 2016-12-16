@@ -764,9 +764,12 @@ a {
 .post-list > li h4.title a:hover {
   color: #2980b9;
 }
-.post-list > li .photo {
+.post-list > li .photo, .post-list > li img {
   max-width: 100%;
   max-height: 800px;
+}
+.post-list > li video, .post-list > li iframe {
+  width: 100%;
 }
 .post-list > li .excerpt, .post-list > li .excerpt *, .post-list > li .no-title {
   font-size: .9rem;
