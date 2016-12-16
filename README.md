@@ -1,7 +1,6 @@
 # Laughing theme for hexo
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://github.com/BoizZ/hexo-theme-laughing)
-[![Hexo](https://img.shields.io/badge/hexo-3.2.0-blue.svg)](https://github.com/hexojs/hexo)
-[![Build Status](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/BoizZ/hexo-theme-laughing/pulls)
+[![Hexo](https://img.shields.io/badge/hexo-3.2.0+-blue.svg)](https://github.com/hexojs/hexo)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/BoizZ/hexo-theme-laughing/master/LICENSE)
 
 简单轻量的[hexo](https://hexo.io)主题。
@@ -25,6 +24,8 @@ Demo: [lalala.lol](http://lalala.lol)
 ## 安装
 
  1. 安装[hexo-render-pug](https://github.com/maxknee/hexo-render-pug)
+ 
+ Laughing主题使用`pug`模板引擎开发，所以首先需要在主程序中安装依赖组件。
 
  ``` shell
  npm install hexo-renderer-pug --save
@@ -32,13 +33,18 @@ Demo: [lalala.lol](http://lalala.lol)
 
  2. 拷贝主题到`themes`目录
 
- 3. 修改`_config.yml`文件
+ ```
+ cd themes
+ git clone git@github.com:BoizZ/hexo-theme-laughing.git
+ ```
+
+ 3. 修改主程序的`_config.yml`文件
 
   ``` yaml
   theme: hexo-theme-laughing
   ```
 
-## 配置文档
+## 主题配置文档
 
 主题的配置都放在了 `_config.yml` 文件里面。
 
@@ -122,7 +128,7 @@ copyright:
   laughing: true
 ```
 
-## 二次开发
+## 二次开发 [![Build Status](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/BoizZ/hexo-theme-laughing/pulls)
 
 Laughing主题遵循简易开发模式，以文件层级及命名细分模块，二次开发比较简单。
 
