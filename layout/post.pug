@@ -1,14 +1,14 @@
 extends ./_partial/layout.pug
 block content
   include ./_partial/post_header.pug
-  .article-content
+  .article-content(style='max-width:'+ theme.content_width +'px')
     if page.photos && page.photos.length
       div
         each photo in page.photos
           a.article-gallery-img.fancybox(href=photo)
             img(src=photo)
     | !{page.content}
-  .article-meta
+  .article-meta(style='max-width:'+ theme.content_width +'px')
     if page.tags && page.tags.length
       .tags
         i.icon.icon-tag
@@ -18,7 +18,7 @@ block content
         i.icon.icon-category
         | !{list_categories(page.categories)}
   if theme.duoshuo.enable
-    .article-comment
+    .article-comment(style='max-width:'+ theme.content_width +'px')
       #ds-thread.ds-thread(data-thread-key=page._id, data-title=page.title, data-url=config.url + url_for(page.path), site-name=theme.duoshuo.siteName)
       script.
         var siteName = document.getElementById('ds-thread').getAttribute('site-name');
