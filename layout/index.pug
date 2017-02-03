@@ -1,7 +1,7 @@
 extends ./_partial/layout.pug
 block content
   include ./_partial/page_header.pug
-  ul.post-list
+  ul.post-list(style='max-width:'+ theme.content_width +'px')
     each post in page.posts.data
       li 
         p.date #{time(post.date, 'LL')}

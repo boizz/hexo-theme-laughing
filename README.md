@@ -88,6 +88,14 @@ author:
   signature: Only when you plant the flowers can you really smell their fragrance.
 ```
 
+### 内容宽度
+
+可自定义内容的最大显示宽度。
+
+``` yaml
+content_width: 600
+```
+
 ### 社交信息
 
 主题内置的社交图标目前有：`facebook`, `twitter`, `weibo`, `wechat`, `github`, `stackoverflow`, `linkin`, `email`, `segmentfault`, `flickr`

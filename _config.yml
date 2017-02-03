@@ -9,6 +9,8 @@ title_plancehold: 随笔
 author:
   head: /default_images/author_head.gif
   signature: Only when you plant the flowers can you really smell their fragrance.
+# content
+content_width: 600
 # Footer
 ## Social icon list: [facebook, twitter, weibo, wechat, github, stackoverflow, linkin, email, segmentfault, flickr]
 social:
