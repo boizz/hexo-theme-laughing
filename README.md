@@ -11,9 +11,9 @@ Demo: [lalala.lol](http://lalala.lol)
 
 响应式布局，宽松设计，还原最佳阅读体验。
 
-![电脑界面](http://callfiles.ccwebsite.com/hexo-theme-laughing/pc_1200.jpg)
+![电脑界面](http://callfiles.ueibo.com/hexo-theme-laughing/pc_1200.jpg)
 
-![手机界面](http://callfiles.ccwebsite.com/hexo-theme-laughing/phone_1200.jpg)
+![手机界面](http://callfiles.ueibo.com/hexo-theme-laughing/phone_1200.jpg)
 
 ## 功能
 
@@ -98,7 +98,7 @@ content_width: 600
 
 ### 社交信息
 
-主题内置的社交图标目前有：`facebook`, `twitter`, `weibo`, `wechat`, `github`, `stackoverflow`, `linkin`, `email`, `segmentfault`, `flickr`
+主题内置的社交图标目前有：`facebook`, `twitter`, `weibo`, `wechat`, `github`, `stackoverflow`, `linkin`, `email`, `segmentfault`, `flickr`, `zhihu`
 
 如需新增请在Issues里面提出
 

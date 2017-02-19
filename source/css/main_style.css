@@ -249,6 +249,10 @@ details, summary {
   content: "\e619";
 }
 
+.icon-zhihu:before {
+  content: "\e6d1";
+}
+
 .icon-calendar:before {
   content: "\e603";
 }
@@ -736,7 +740,6 @@ a {
 }
 
 .post-list {
-  max-width: 600px;
   margin: 72px auto 0 auto;
   padding: 0 36px;
   list-style: none;
@@ -825,7 +828,6 @@ a {
 }
 
 .article-content, .article-meta {
-  max-width: 600px;
   padding: 0 36px;
   line-height: 2;
 }
@@ -938,7 +940,6 @@ a {
 }
 
 .article-comment {
-  max-width: 600px;
   padding: 0 36px;
   margin: 0 auto 72px auto;
 }
