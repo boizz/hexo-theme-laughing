@@ -305,6 +305,10 @@ details, summary {
   content: "\e627";
 }
 
+.icon-disqus:before {
+  content: "\e7c6";
+}
+
 .icon-flickr:before {
   content: "\e73d";
 }
