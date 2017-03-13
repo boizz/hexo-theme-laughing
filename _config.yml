@@ -4,25 +4,32 @@ favicon: /favicon.ico
 keywords: Hexo, Gruntjs, Nodejs, Reactjs, Vuejs
 # Header
 page_background: http://callfiles.ueibo.com/hexo-theme-laughing/page_background.jpg
+page_menu_button: dark
 post_background: http://callfiles.ueibo.com/hexo-theme-laughing/post_background.jpg
+post_menu_button: light
 title_plancehold: 随笔
 author:
   head: http://callfiles.ueibo.com/hexo-theme-laughing/thumb.jpg
   signature: Only when you plant the flowers can you really smell their fragrance.
+navication:
+  - name: Github
+    link: https://github.com
+  - name: V2EX
+    link: https://www.v2ex.com/
 # content
-content_width: 600
+content_width: 800
 # Footer
 ## Social icon list: [facebook, twitter, weibo, wechat, github, stackoverflow, linkin, email, segmentfault, flickr]
 social:
   - name: GitHub
     icon: github
-    link: http://github.com/BoizZ
+    link: https://github.com/BoizZ
   - name: Weibo
     icon: weibo
-    link: http://weibo.com/heqibang
+    link: https://weibo.com/heqibang
   - name: SegmentFault
     icon: segmentfault
-    link: http://www.segmentfault.com/u/bon
+    link: https://www.segmentfault.com/u/bon
 # Duoshuo
 duoshuo:
   enable: true

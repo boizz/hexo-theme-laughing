@@ -1,4 +1,8 @@
 .page-header
+  if theme.page_menu_button === "light"
+    label.navi-button.light(for="navi") MENU
+  else
+    label.navi-button(for="navi") MENU
   .background
     img(src=theme.page_background)
   .author

@@ -541,6 +541,47 @@ pre .xml .cdata {
 
 a {
   text-decoration: none;
+  color: #34495e;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  position: relative;
+  transition: all 0.25s;
+  background: white;
+}
+.wrapper.done .page-header .author .head, .wrapper.done .page-header .author .name, .wrapper.done .page-header .author .signature {
+  transform: translateY(0);
+  opacity: 1;
+}
+.wrapper.done .page-header .author .name, .wrapper.done .page-header .author .signature {
+  transition-delay: 0.08s;
+}
+.wrapper.done .post-list {
+  transform: translateY(0);
+  opacity: 1;
+  transition-delay: 0.16s;
+}
+.wrapper.done .post-header .post-title h1.title, .wrapper.done .post-header .post-title ul.meta {
+  transform: translateY(0);
+  opacity: 1;
+}
+.wrapper.done .post-header .post-title ul.meta {
+  transition-delay: 0.08s;
+}
+.wrapper.done .article-content, .wrapper.done .article-meta {
+  transform: translateY(0);
+  opacity: 1;
+}
+.wrapper.done .article-content {
+  transition-delay: 0.16s;
+}
+.wrapper.done .article-meta {
+  transition-delay: 0.24s;
 }
 
 @media screen and (max-width: 1024px) {
@@ -548,6 +589,9 @@ a {
     -webkit-user-select: none;
     user-select: none;
   }
+}
+.page-header {
+  position: relative;
 }
 .page-header .background {
   width: 100%;
@@ -581,6 +625,9 @@ a {
   box-shadow: 0 0 5px #95a5a6;
   position: relative;
   top: -68px;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all 0.4s;
 }
 .page-header .author .head img {
   width: 100%;
@@ -591,6 +638,9 @@ a {
 .page-header .author .name, .page-header .author .signature {
   position: relative;
   margin: 0;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all 0.4s;
 }
 .page-header .author .name {
   font-size: 1.3rem;
@@ -647,6 +697,9 @@ a {
   font-size: 2.2rem;
   line-height: 40px;
   margin: 0;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all 0.4s;
 }
 .post-header .post-title ul.meta {
   display: inline-block;
@@ -655,6 +708,9 @@ a {
   padding: 15px 10px;
   font-size: .75rem;
   line-height: 1.6;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all 0.4s;
 }
 .post-header .post-title ul.meta > li {
   margin: 0 12px;
@@ -700,6 +756,83 @@ a {
     line-height: 36px;
   }
 }
+#navi {
+  display: none;
+}
+
+.navi-button {
+  font-size: .8rem;
+  color: #7f8c8d;
+  border: 1px solid rgba(127, 140, 141, 0.6);
+  line-height: 35px;
+  border-radius: 4px;
+  display: block;
+  padding: 0 15px;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  cursor: pointer;
+  text-transform: uppercase;
+  z-index: 99;
+  transition: all .3s;
+}
+.navi-button:hover {
+  background: rgba(127, 140, 141, 0.7);
+  color: white;
+}
+.navi-button.light {
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+.navi-button.light:hover {
+  background: rgba(255, 255, 255, 0.7);
+  color: #7f8c8d;
+}
+
+.main-navication {
+  margin: 0;
+  padding: 100px 0 0;
+  background: #2c3e50;
+  width: 150px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.main-navication li {
+  list-style: none;
+}
+.main-navication a {
+  display: block;
+  padding: 0 15px;
+  color: white;
+}
+.main-navication i {
+  display: block;
+  width: 50px;
+  float: left;
+  font-size: 16px;
+  line-height: 48px;
+  text-align: center;
+}
+.main-navication span {
+  font-size: 12px;
+  line-height: 48px;
+  display: block;
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 0.4s;
+}
+
+#navi:checked ~ .wrapper {
+  transform: translateX(-150px);
+}
+
+#navi:checked ~ .main-navication span {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 .page-footer .top {
   background: #2c3e50;
   padding: 110px 15px;
@@ -747,6 +880,9 @@ a {
   margin: 72px auto 0 auto;
   padding: 0 36px;
   list-style: none;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all 0.4s;
 }
 .post-list > li {
   margin-bottom: 80px;
@@ -834,6 +970,9 @@ a {
 .article-content, .article-meta {
   padding: 0 36px;
   line-height: 2;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all 0.4s;
 }
 
 .article-content {

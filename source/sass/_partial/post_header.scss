@@ -24,6 +24,9 @@
       font-size: 2.2rem;
       line-height: 40px;
       margin: 0;
+      opacity: 0;
+      transform: translateY(-20px);
+      transition: all 0.4s;
     }
     ul.meta {
       display: inline-block;
@@ -32,6 +35,9 @@
       padding: 15px 10px;
       font-size: .75rem;
       line-height: 1.6;
+      opacity: 0;
+      transform: translateY(-20px);
+      transition: all 0.4s;
       >li {
         margin: 0 12px;
         display: inline-block;

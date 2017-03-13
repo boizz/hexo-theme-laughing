@@ -1,0 +1,75 @@
+#navi {
+  display: none;
+}
+.navi-button {
+  font-size: .8rem;
+  color: $color-asbestos;
+	border: 1px solid rgba($color-asbestos, .6);
+  line-height: 35px;
+  border-radius: 4px;
+	display: block;
+  padding: 0 15px;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+	cursor: pointer;
+  text-transform: uppercase;
+  z-index: 99;
+  transition: all .3s;
+  &:hover {
+    background: rgba($color-asbestos, .7);
+    color: white;
+  }
+  &.light {
+    color: white;
+	  border: 1px solid rgba(white, .6);
+    &:hover {
+      background: rgba(white, .7);
+      color: $color-asbestos;
+    }
+  }
+  
+}
+.main-navication {
+  margin: 0;
+  padding: 100px 0 0;
+	background: $color-midnightBlue;
+  width: 150px;
+	position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  li {
+    list-style: none;
+  }
+  a {
+    display: block;
+    padding: 0 15px;
+    color: white;
+  }
+  i {
+    display: block;
+    width: 50px;
+    float: left; 
+	  font-size: 16px;
+    line-height: 48px;
+    text-align: center;
+  }
+  span {
+    font-size: 12px;
+    line-height: 48px;
+    display: block;
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all 0.4s;
+  }
+}
+#navi:checked ~ .wrapper {
+  transform: translateX(-150px);
+}
+#navi:checked ~ .main-navication {
+  span {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

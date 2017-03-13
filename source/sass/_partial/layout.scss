@@ -1,5 +1,54 @@
 a {
   text-decoration: none;
+  color: $color-wetAsphalt;
+}
+body {
+  position: relative;
+  overflow-x: hidden;
+}
+.wrapper {
+  position: relative;
+  transition: all 0.25s;
+  background: white;
+  &.done {
+    .page-header {
+      .author {
+        .head, .name, .signature {
+          transform: translateY(0);
+          opacity: 1;
+        }
+        .name, .signature {
+          transition-delay: 0.08s;
+        }
+      }
+    }
+    .post-list {
+      transform: translateY(0);
+      opacity: 1;
+      transition-delay: 0.16s;
+    }
+    .post-header {
+      .post-title {
+        h1.title, ul.meta {
+          transform: translateY(0);
+          opacity: 1;
+        }
+        ul.meta {
+          transition-delay: 0.08s;
+        }
+      }
+    }
+    .article-content, .article-meta {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    .article-content {
+      transition-delay: 0.16s;
+    }
+    .article-meta {
+      transition-delay: 0.24s;
+    }
+  }
 }
 @media screen and (max-width: $screen-small) {
   html, body {

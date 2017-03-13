@@ -2,6 +2,9 @@
   margin: 72px auto 0 auto;
   padding: 0 36px;
   list-style: none;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all 0.4s;
   >li {
     margin-bottom: 80px;
     p.date, h4.title {

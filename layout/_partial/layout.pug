@@ -11,6 +11,24 @@ html(lang="zh-cn")
     link(rel="stylesheet", href="/css/main_style.min.css")
     link(rel="icon", href=theme.favicon)
   body
-    block content
-    include ./footer.pug
+    input#navi(type="checkbox")
+    ul.main-navication
+      li
+        a(href='/')
+          span Home
+      if theme.navication && theme.navication.length
+        each item in theme.navication
+          li
+            a(href=item.link)
+              if item.type
+                i(class="icon icon"+item.type)
+              span #{item.name}
+    .wrapper#wrap
+      block content
+      include ./footer.pug
     block script
+    script.
+      var wrap = document.getElementById('wrap');
+      window.onload = function () {
+        wrap.className += ' done';
+      }
