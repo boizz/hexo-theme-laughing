@@ -111,7 +111,7 @@ content_width: 600
 
 ### 社交信息
 
-主题内置的社交图标目前有：`facebook`, `twitter`, `weibo`, `wechat`, `github`, `stackoverflow`, `linkin`, `email`, `segmentfault`, `flickr`, `zhihu`, `disqus`
+主题内置的社交图标目前有：`facebook`, `twitter`, `weibo`, `wechat`, `github`, `stackoverflow`, `linkin`, `email`, `segmentfault`, `flickr`, `zhihu`, `disqus`, `douban`
 
 如需新增请在Issues里面提出
 
