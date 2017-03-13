@@ -56,7 +56,8 @@
     text-align: center;
   }
   span {
-    font: 12px/48px;
+    font-size: 12px;
+    line-height: 48px;
     display: block;
     opacity: 0;
     transform: translateX(-50px);
