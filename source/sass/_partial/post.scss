@@ -1,6 +1,9 @@
 .article-content, .article-meta {
   padding: 0 36px;
   line-height: 2;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all 0.4s;
 }
 .article-content {
   margin: 72px auto 48px auto;

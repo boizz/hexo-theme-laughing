@@ -4,7 +4,7 @@
 .navi-button {
   font-size: .8rem;
   color: $color-asbestos;
-	border: 1px solid rgba($color-asbestos, .7);
+	border: 1px solid rgba($color-asbestos, .6);
   line-height: 35px;
   border-radius: 4px;
 	display: block;
@@ -15,10 +15,20 @@
 	cursor: pointer;
   text-transform: uppercase;
   z-index: 99;
+  transition: all .3s;
+  &:hover {
+    background: rgba($color-asbestos, .7);
+    color: white;
+  }
   &.light {
     color: white;
-	  border: 1px solid rgba(white, .7);
+	  border: 1px solid rgba(white, .6);
+    &:hover {
+      background: rgba(white, .7);
+      color: $color-asbestos;
+    }
   }
+  
 }
 .main-navication {
   margin: 0;

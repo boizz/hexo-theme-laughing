@@ -23,7 +23,12 @@ html(lang="zh-cn")
               if item.type
                 i(class="icon icon"+item.type)
               span #{item.name}
-    .wrapper
+    .wrapper#wrap
       block content
       include ./footer.pug
-      block script
+    block script
+    script.
+      var wrap = document.getElementById('wrap');
+      window.onload = function () {
+        wrap.className += ' done';
+      }
