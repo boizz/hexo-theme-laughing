@@ -21,8 +21,8 @@ content_width: 800
 # Footer
 ## Social icon list: [facebook, twitter, weibo, wechat, github, stackoverflow, linkin, email, segmentfault, flickr]
 social:
-  - name: Douban
-    icon: douban
+  - name: Github
+    icon: github
     link: https://github.com/BoizZ
   - name: Weibo
     icon: weibo
