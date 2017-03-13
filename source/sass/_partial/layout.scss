@@ -1,5 +1,15 @@
 a {
   text-decoration: none;
+  color: $color-wetAsphalt;
+}
+body {
+  position: relative;
+  overflow-x: hidden;
+}
+.wrapper {
+  position: relative;
+  transition: all 0.25s;
+  background: white;
 }
 @media screen and (max-width: $screen-small) {
   html, body {
