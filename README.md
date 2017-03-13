@@ -65,15 +65,28 @@ keywords: Hexo, Gruntjs, Nodejs, Reactjs, Vuejs
 
 ### 页头
 
+菜单按钮风格目前支持两种：`dark`，`light`。
+
 ``` yaml
 ## 页面背景
 page_background: /default_images/page_background.jpg
 
+## 页面菜单按钮风格
+page_menu_button: dark
+
 ## 文章背景
 post_background: /default_images/post_background.jpg
 
+## 文章菜单按钮风格
+page_menu_button: light
+
 ## 标题占位字：无标题类型文章的标题占位字
 title_plancehold: '随笔'
+
+## 自定义菜单
+navication:
+  - name: Lalala.lol
+    link: http://lalala.lol
 ```
 
 ### 作者信息
