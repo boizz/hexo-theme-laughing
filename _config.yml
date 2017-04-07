@@ -19,7 +19,7 @@ navication:
 # content
 content_width: 800
 # Footer
-## Social icon list: [facebook, twitter, weibo, wechat, github, stackoverflow, linkin, email, segmentfault, flickr]
+## Social icon list: [facebook, twitter, weibo, wechat, github, stackoverflow, linkin, email, segmentfault, flickr, zhihu, disqus, douban, bilibili]
 social:
   - name: Github
     icon: github
