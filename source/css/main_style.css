@@ -297,6 +297,10 @@ details, summary {
   content: "\e610";
 }
 
+.icon-bilibili:before {
+  content: "\e606";
+}
+
 .icon-arror-right:before {
   content: "\e617";
 }
