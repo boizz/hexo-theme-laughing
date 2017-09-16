@@ -78,7 +78,7 @@ page_menu_button: dark
 post_background: /default_images/post_background.jpg
 
 ## 文章菜单按钮风格
-page_menu_button: light
+post_menu_button: light
 
 ## 标题占位字：无标题类型文章的标题占位字
 title_plancehold: '随笔'
